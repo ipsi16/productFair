@@ -1,0 +1,15 @@
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<body background="brown.jpg">
+<section class="content">
+  <h2 align='center'><font color='Red' size='15'> {{ encoded_text }}</font></h1>
+  <h2 align='center'><font size='20'>{{question_text}}</h2>
+            <form align='center'class="form-inline" action="answer" method="POST">
+            	<input name="encoded_text" type="hidden" value="{{ encoded_text }}" />
+                <input id='resp' name='resp' class="form-control" type="text" placeholder="Enter here ">
+                <button type="submit" class="btn btn-info">Submit</button>
+              </div>
+        </form>
+  </section>
+</body>
+</html>
